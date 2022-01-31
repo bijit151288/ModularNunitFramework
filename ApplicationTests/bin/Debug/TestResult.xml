@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="0" runstate="Runnable" testcasecount="6" result="Failed" total="6" passed="0" failed="6" inconclusive="0" skipped="0" asserts="0" engine-version="3.12.0.0" clr-version="4.0.30319.42000" start-time="2021-11-25 12:08:45Z" end-time="2021-11-25 12:08:46Z" duration="1.126045">
+  <command-line><![CDATA["C:\Program Files (x86)\NUnit.org\nunit-console\nunit3-console.exe"  ApplicationTests.dll]]></command-line>
+  <test-suite type="Assembly" id="1-1009" name="ApplicationTests.dll" fullname="D:\ModularNunitFramework\ApplicationTests\bin\Debug\ApplicationTests.dll" runstate="Runnable" testcasecount="6" result="Failed" site="Child" start-time="2021-11-25T12:08:46.2278913Z" end-time="2021-11-25T12:08:46.4780461Z" duration="0.249456" total="6" passed="0" failed="6" warnings="0" inconclusive="0" skipped="0" asserts="0">
+    <environment framework-version="3.13.2.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.19043.0" platform="Win32NT" cwd="D:\ModularNunitFramework\ApplicationTests\bin\Debug" machine-name="BIJITP10-PC" user="bijitp" user-domain="BIJITP10-PC" culture="en-US" uiculture="en-US" os-architecture="x64" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="D:\ModularNunitFramework\ApplicationTests\bin\Debug" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.7.2" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="TargetRuntimeFramework" value="net-4.0" />
+      <setting name="NumberOfTestWorkers" value="8" />
+    </settings>
+    <properties>
+      <property name="_PID" value="19260" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="1-1010" name="ApplicationTests" fullname="ApplicationTests" runstate="Runnable" testcasecount="6" result="Failed" site="Child" start-time="2021-11-25T12:08:46.2428484Z" end-time="2021-11-25T12:08:46.4780461Z" duration="0.235273" total="6" passed="0" failed="6" warnings="0" inconclusive="0" skipped="0" asserts="0">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="SetUpFixture" id="1-1005" name="Tests" fullname="ApplicationTests.Tests.ExtentReportSetup" classname="ApplicationTests.Tests.ExtentReportSetup" runstate="Runnable" testcasecount="6" result="Failed" label="Error" site="TearDown" start-time="2021-11-25T12:08:46.2448415Z" end-time="2021-11-25T12:08:46.4760515Z" duration="0.231669" total="6" passed="0" failed="6" warnings="0" inconclusive="0" skipped="0" asserts="0">
+        <failure>
+          <message><![CDATA[System.IO.FileNotFoundException : The configuration file 'ApplicationTests\appSettings.json' was not found and is not optional. The physical path is 'D:\ModularNunitFramework\ApplicationTests\bin\Debug\ApplicationTests\appSettings.json'.
+TearDown : System.NullReferenceException : Object reference not set to an instance of an object.]]></message>
+          <stack-trace><![CDATA[   at Microsoft.Extensions.Configuration.FileConfigurationProvider.Load(Boolean reload)
+   at Microsoft.Extensions.Configuration.ConfigurationRoot..ctor(IList`1 providers)
+   at Microsoft.Extensions.Configuration.ConfigurationBuilder.Build()
+   at ApplicationTests.Tests.ExtentReportSetup.PreSetup() in D:\ModularNunitFramework\ApplicationTests\Tests\ExtentReportSetup.cs:line 24
+--TearDown
+   at ApplicationTests.Tests.ExtentReportSetup.PostTearDown() in D:\ModularNunitFramework\ApplicationTests\Tests\ExtentReportSetup.cs:line 55]]></stack-trace>
+        </failure>
+        <test-suite type="TestFixture" id="1-1000" name="DashboardPageTest" fullname="ApplicationTests.Tests.DashboardPageTest" classname="ApplicationTests.Tests.DashboardPageTest" runstate="Runnable" testcasecount="4" result="Failed" label="Error" site="Parent" start-time="2021-11-25T12:08:46.2448415Z" end-time="2021-11-25T12:08:46.4710659Z" duration="0.226538" total="0" passed="0" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <failure>
+            <message><![CDATA[OneTimeSetUp: System.IO.FileNotFoundException : The configuration file 'ApplicationTests\appSettings.json' was not found and is not optional. The physical path is 'D:\ModularNunitFramework\ApplicationTests\bin\Debug\ApplicationTests\appSettings.json'.]]></message>
+          </failure>
+        </test-suite>
+        <test-case id="1-1001" name="VerifyUserNameTest" fullname="ApplicationTests.Tests.DashboardPageTest.VerifyUserNameTest" methodname="VerifyUserNameTest" classname="ApplicationTests.Tests.DashboardPageTest" runstate="Runnable" seed="265606461" result="Failed" label="Error" site="Parent" start-time="2021-11-25T12:08:46.2448415Z" end-time="2021-11-25T12:08:46.4730582Z" duration="0.228141" asserts="0">
+          <properties>
+            <property name="Order" value="1" />
+          </properties>
+          <failure>
+            <message><![CDATA[OneTimeSetUp: System.IO.FileNotFoundException : The configuration file 'ApplicationTests\appSettings.json' was not found and is not optional. The physical path is 'D:\ModularNunitFramework\ApplicationTests\bin\Debug\ApplicationTests\appSettings.json'.]]></message>
+          </failure>
+        </test-case>
+        <test-case id="1-1002" name="VerifyEmployeeDistributionSubunitPanelTest" fullname="ApplicationTests.Tests.DashboardPageTest.VerifyEmployeeDistributionSubunitPanelTest" methodname="VerifyEmployeeDistributionSubunitPanelTest" classname="ApplicationTests.Tests.DashboardPageTest" runstate="Runnable" seed="1396808432" result="Failed" label="Error" site="Parent" start-time="2021-11-25T12:08:46.2448415Z" end-time="2021-11-25T12:08:46.4730582Z" duration="0.228552" asserts="0">
+          <properties>
+            <property name="Order" value="2" />
+          </properties>
+          <failure>
+            <message><![CDATA[OneTimeSetUp: System.IO.FileNotFoundException : The configuration file 'ApplicationTests\appSettings.json' was not found and is not optional. The physical path is 'D:\ModularNunitFramework\ApplicationTests\bin\Debug\ApplicationTests\appSettings.json'.]]></message>
+          </failure>
+        </test-case>
+        <test-case id="1-1003" name="VerifyLegendPanelTest" fullname="ApplicationTests.Tests.DashboardPageTest.VerifyLegendPanelTest" methodname="VerifyLegendPanelTest" classname="ApplicationTests.Tests.DashboardPageTest" runstate="Runnable" seed="1495892601" result="Failed" label="Error" site="Parent" start-time="2021-11-25T12:08:46.2448415Z" end-time="2021-11-25T12:08:46.4730582Z" duration="0.228561" asserts="0">
+          <properties>
+            <property name="Order" value="3" />
+          </properties>
+          <failure>
+            <message><![CDATA[OneTimeSetUp: System.IO.FileNotFoundException : The configuration file 'ApplicationTests\appSettings.json' was not found and is not optional. The physical path is 'D:\ModularNunitFramework\ApplicationTests\bin\Debug\ApplicationTests\appSettings.json'.]]></message>
+          </failure>
+        </test-case>
+        <test-case id="1-1004" name="VerifyPendingLeaveRequestsPanelTest" fullname="ApplicationTests.Tests.DashboardPageTest.VerifyPendingLeaveRequestsPanelTest" methodname="VerifyPendingLeaveRequestsPanelTest" classname="ApplicationTests.Tests.DashboardPageTest" runstate="Runnable" seed="1504359497" result="Failed" label="Error" site="Parent" start-time="2021-11-25T12:08:46.2448415Z" end-time="2021-11-25T12:08:46.4730582Z" duration="0.228563" asserts="0">
+          <properties>
+            <property name="Order" value="4" />
+          </properties>
+          <failure>
+            <message><![CDATA[OneTimeSetUp: System.IO.FileNotFoundException : The configuration file 'ApplicationTests\appSettings.json' was not found and is not optional. The physical path is 'D:\ModularNunitFramework\ApplicationTests\bin\Debug\ApplicationTests\appSettings.json'.]]></message>
+          </failure>
+        </test-case>
+        <test-suite type="TestFixture" id="1-1006" name="LoginPageTest" fullname="ApplicationTests.Tests.LoginPageTest" classname="ApplicationTests.Tests.LoginPageTest" runstate="Runnable" testcasecount="2" result="Failed" label="Error" site="Parent" start-time="2021-11-25T12:08:46.2448415Z" end-time="2021-11-25T12:08:46.4730582Z" duration="0.228565" total="0" passed="0" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <failure>
+            <message><![CDATA[OneTimeSetUp: System.IO.FileNotFoundException : The configuration file 'ApplicationTests\appSettings.json' was not found and is not optional. The physical path is 'D:\ModularNunitFramework\ApplicationTests\bin\Debug\ApplicationTests\appSettings.json'.]]></message>
+          </failure>
+        </test-suite>
+        <test-case id="1-1007" name="LoginPageTitleTest" fullname="ApplicationTests.Tests.LoginPageTest.LoginPageTitleTest" methodname="LoginPageTitleTest" classname="ApplicationTests.Tests.LoginPageTest" runstate="Runnable" seed="123082193" result="Failed" label="Error" site="Parent" start-time="2021-11-25T12:08:46.2448415Z" end-time="2021-11-25T12:08:46.4730582Z" duration="0.228572" asserts="0">
+          <properties>
+            <property name="Order" value="1" />
+          </properties>
+          <failure>
+            <message><![CDATA[OneTimeSetUp: System.IO.FileNotFoundException : The configuration file 'ApplicationTests\appSettings.json' was not found and is not optional. The physical path is 'D:\ModularNunitFramework\ApplicationTests\bin\Debug\ApplicationTests\appSettings.json'.]]></message>
+          </failure>
+        </test-case>
+        <test-case id="1-1008" name="VerifyLoginTest" fullname="ApplicationTests.Tests.LoginPageTest.VerifyLoginTest" methodname="VerifyLoginTest" classname="ApplicationTests.Tests.LoginPageTest" runstate="Runnable" seed="2006854069" result="Failed" label="Error" site="Parent" start-time="2021-11-25T12:08:46.2448415Z" end-time="2021-11-25T12:08:46.4730582Z" duration="0.228573" asserts="0">
+          <properties>
+            <property name="Order" value="2" />
+          </properties>
+          <failure>
+            <message><![CDATA[OneTimeSetUp: System.IO.FileNotFoundException : The configuration file 'ApplicationTests\appSettings.json' was not found and is not optional. The physical path is 'D:\ModularNunitFramework\ApplicationTests\bin\Debug\ApplicationTests\appSettings.json'.]]></message>
+          </failure>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
