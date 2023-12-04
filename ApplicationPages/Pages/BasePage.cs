@@ -9,7 +9,7 @@ namespace ApplicationPages.Pages
 {
     public class BasePage
     {
-        //Create an instance of CommonElement
+        //Create an instance of CommonElements
         public CommonElement commonElement;
 
         //Create an instance of DropdownControl
